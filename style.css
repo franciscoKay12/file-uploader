@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+}
+
+body{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+ background-image: url(fondoupload.jpg);
+ background-size: cover;
+}
+
+::selection{
+  color: white;
+  background: gray;
+}
+
+.wrapper{
+  background: #cccbca;
+  background-repeat: round;
+  border-radius: 10px;
+  width: 460px;
+  padding: 30px 20px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.40);
+}
+
+.wrapper header{
+  font-size: 35px;
+  font-weight: 900;
+  color: rgb(44, 40, 40);
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.wrapper form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 80px 0;
+  margin: 8px 0;
+  flex-direction: column;
+  background: #6b6565e5;
+  border-radius: 12px;
+}
+
+form :where(i,p){
+  color: rgb(78, 54, 54);
+}
+
+form i{
+  font-size: 28px;
+}
+
+form p{
+  font-size: 22px;
+}
+
+section .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  background: white;
+  list-style: none;
+  padding: 12px 4px;
+  margin-bottom: 12px;
+}
+
+section .row i{
+  font-size: 30px;
+}
+
+section .details span{
+   font-size: 15px;
+}
+
+.progress-area .row .content{
+  width: 100%;
+  margin-left: 12px;
+}
+
+.progress-area .details{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  justify-content: space-between;
+}
+
+.progress-area .content .progress-bar{
+  height: 20px;
+  width: 100%;
+  border-radius: 12px;
+  background: white;
+}
+
+.progress-area .progress-bar .progress{
+  height: 100%;
+  width: 0%;
+  border-radius: 12px;
+  background: red;
+}
+
+.uploaded-area{
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.uploaded-area .onprogress{
+  max-height: 210px;
+}
+
+.uploaded-area::-webkit-scrollbar{
+  width: 0;
+}
+
+.uploaded-area .row{
+  background: rgb(79, 223, 79);
+}
+
+.uploaded-area .row .content{
+  display: flex;
+  align-items: center;
+}
+
+.uploaded-area .row .details{
+  display: flex;
+  margin-left: 12px;
+  flex-direction: column;
+}
+
+.uploaded-area i.fa-file-alt{
+  color: rgb(10, 10, 10);
+  font-size: 30px;
+}
+
+.uploaded-area i.fa-check{
+  color: rgb(10, 10, 10);
+  font-size: 18px;
+}
